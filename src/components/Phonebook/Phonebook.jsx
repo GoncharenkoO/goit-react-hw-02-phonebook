@@ -29,7 +29,7 @@ class Phonebook extends Component {
     if (contacts.find(contact => contact.name === name)) {
       alert(`${name} is already in contacts`);
       return;
-    } else if (name.length === 0) {
+    } else if (!name.length) {
       alert('Fields must be filled!');
     }
 
